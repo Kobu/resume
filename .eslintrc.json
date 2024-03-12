@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc",
+  "root": true,
+  "plugins": [
+    "no-relative-import-paths"
+  ],
+  "rules": {
+    "react/jsx-key": "off",
+    "indent": [
+      "error",
+      2
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "parser": "@typescript-eslint/parser"
+    }
+  ]
+}
