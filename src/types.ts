@@ -1,36 +1,37 @@
 import { images } from "./data";
 
 export type EmploymentEntryProps = {
-    icon: typeof images[keyof typeof images]
-    institute: string
-    position: string
-    team: string
-    from: Date
-    to?: Date
-    description: string[]
-}
+  icon: (typeof images)[keyof typeof images];
+  institute: string;
+  position: string;
+  team: string;
+  from: Date;
+  to?: Date;
+  technologies: string[];
+  description: string[];
+};
 
 export type EducationEntryProps = {
-    insititute: string
-    address: string
-    from: Date
-    to: Date
-}
+  insititute: string;
+  address: string;
+  from: Date;
+  to: Date;
+};
 
 export type EnumerationEntry = {
-    title: string
-    description: string[]
-}
+  title: string;
+  description: string[];
+};
 
 export type ProjectEntryProps = {
-    repositry: string
-    name: string
-    description: string[]
-}
+  repositry: string;
+  name: string;
+  description: string[];
+};
 
 export type SkillEntryProps = {
-    name: string
-    icon: typeof images[keyof typeof images]
-    rating: number
-    description: string[]
-}
+  name: string;
+  icon: (typeof images)[keyof typeof images];
+  rating: number;
+  description: string[];
+};

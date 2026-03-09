@@ -39,8 +39,8 @@ export const employments: EmploymentEntryProps[] = [
     position: "Senior Software Engineer",
     team: "Infrastructure Team",
     icon: images.oracle_icon,
+    technologies: ["OCI", "Kubernetes", "Docker", "Java", "Python", "SQL"],
     description: [
-      "technologies: OCI, Kubernetes, Docker, Java, Python, SQL",
       "orchestrating schema migrations across tens of thousands of production databases",
       "handling non-trivial migration pipelines at scale",
       "working with OCI-native services for scheduling, monitoring and execution",
@@ -51,8 +51,8 @@ export const employments: EmploymentEntryProps[] = [
     institute: "Adacta Fintech",
     from: new Date(2023, 8),
     to: new Date(2024, 8),
+    technologies: ["C#", "SQL", "Javascript", "ActiveMQ"],
     description: [
-      "technologies: C#, SQL, Javascript, ActiveMQ",
       "implementing technical side of life insurance",
       "responsible for ETL pipelines, reporting and data sync with data-warehouse",
       "performance optimizations of data-warehouse system",
@@ -66,8 +66,8 @@ export const employments: EmploymentEntryProps[] = [
     institute: "FNZ Group",
     from: new Date(2022, 5),
     to: new Date(2023, 8),
+    technologies: ["C#", "SQL", "REST", "SOAP"],
     description: [
-      "technologies: C#, SQL, REST, SOAP",
       "implementing insurance and banking solutions using CQRS",
       "diagnosing and fixing slow query and performance issues across the database system",
       "providing mentorship for new joiners",
