@@ -24,15 +24,13 @@ export const CV = () => (
     >
       {/* Header */}
       <View
-        style={tw(
-          "flex flex-row bg-yellow-500 items-center p-3 justify-between",
-        )}
+        style={tw("flex flex-row bg-yellow-500 items-center justify-between")}
       >
-        <View style={tw("ml-10")}>
+        <View style={tw("ml-10 p-3")}>
           <Text style={{ fontSize: 28 }}>Jakub</Text>
           <Text style={{ fontSize: 28 }}>Jakubec</Text>
         </View>
-        <View style={tw("flex flex-col gap-1")}>
+        <View style={tw("flex flex-col gap-1 p-3")}>
           {socialsLinks.map((value) => (
             <Link
               src={value.link}
@@ -43,7 +41,10 @@ export const CV = () => (
             </Link>
           ))}
         </View>
-        <Image src={images.me} style={tw("rounded-md h-16")} />
+        <Image
+          src={images.me}
+          style={{ alignSelf: "stretch", width: 80, objectFit: "cover" }}
+        />
       </View>
 
       {/* Employment */}
