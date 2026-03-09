@@ -179,6 +179,7 @@ export const projects: ProjectEntryProps[] = [
     description: [
       "you are looking at it right now",
       "PDF generated entirely in React",
+      "GitHub Action auto-renders and commits the PDF on update",
     ],
   },
   {
