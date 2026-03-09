@@ -22,6 +22,8 @@ export const images = {
   sql_icon: "images/sql-icon.png",
   git_icon: "images/git-icon.png",
   react_icon: "images/react-icon.png",
+  docker_icon: "images/docker-icon.png",
+  rust_icon: "images/rust-icon.png",
 
   oracle_icon: "images/oracle.png",
   fnz_icon: "images/fnz-icon.png",
@@ -239,29 +241,24 @@ export const skills: SkillEntryProps[] = [
     name: "C#",
     icon: images.csharp_icon,
     rating: 4,
-    description: [
-      "used on regular basis in a professional setting",
-      "advance knowledge of the C# ecosystem",
-    ],
+    description: ["2 years professional use", ".NET, EF Core, LINQ"],
   },
   {
     name: "Python",
     icon: images.python_icon,
     rating: 4,
     description: [
-      "proficient knowledge",
-      "used to automate and script numerous tasks",
-      "several times used in a medium sized project",
+      "automation, scripting, and backend",
+      "used in production at Oracle",
     ],
   },
   {
-    name: "Typescript",
+    name: "TypeScript",
     icon: images.typescript_icon,
     rating: 4,
     description: [
-      "intermediate knowledge of the TS/JS ecosystem",
-      "loving the type system",
-      "typescript enthusiast",
+      "primary language for personal projects",
+      "full-stack with Next.js and React",
     ],
   },
   {
@@ -269,27 +266,17 @@ export const skills: SkillEntryProps[] = [
     icon: images.sql_icon,
     rating: 3,
     description: [
-      "used almost daily in a professional setting",
-      "comfortable using SQL even in bigger projects",
+      "daily use in professional setting",
+      "query tuning and schema design",
     ],
   },
   {
-    name: "Git, GitHub and GitLab",
+    name: "Git, GitHub, GitLab",
     icon: images.git_icon,
     rating: 4,
     description: [
-      "advanced knowledge of git",
-      "comfortable doing even the non-trivial git tasks",
-    ],
-  },
-  {
-    name: "Haskell",
-    icon: images.haskell_icon,
-    rating: 2,
-    description: [
-      "one of my favorite languages",
-      "basic knowledge of core principles",
-      "fan of functional programming",
+      "advanced: rebasing, bisect, hooks",
+      "CI/CD pipelines on GitHub Actions",
     ],
   },
   {
@@ -297,9 +284,41 @@ export const skills: SkillEntryProps[] = [
     icon: images.react_icon,
     rating: 3,
     description: [
-      "intermediate knowledge of react ecosystem",
-      "comfortable and excited to code in React with TS",
-      "fan of T3-stack",
+      "used across all personal projects",
+      "React + TypeScript + Next.js",
+    ],
+  },
+  {
+    name: "Rust",
+    icon: images.rust_icon,
+    rating: 3,
+    description: [
+      "powers nowaster backend via Axum",
+      "memory safety without GC",
+    ],
+  },
+  {
+    name: "Java",
+    icon: images.java_icon,
+    rating: 3,
+    description: ["used daily at Oracle", "multithreading, JVM internals"],
+  },
+  {
+    name: "Docker",
+    icon: images.docker_icon,
+    rating: 3,
+    description: [
+      "containers for dev and production",
+      "used in Kubernetes workflows at Oracle",
+    ],
+  },
+  {
+    name: "OCI",
+    icon: images.oracle_icon,
+    rating: 3,
+    description: [
+      "used daily at Oracle",
+      "scheduling, monitoring, cloud execution",
     ],
   },
 ];

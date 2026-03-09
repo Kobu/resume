@@ -11,7 +11,6 @@ import { socialsLinks, images } from "./data";
 import { AchievementsSection } from "./sections/achievements";
 import { EducationSection } from "./sections/education";
 import { EmploymentSection } from "./sections/employment";
-import { HobbiesSection } from "./sections/hobbies";
 import { ProjectsSection } from "./sections/projects";
 import { SkillsSection } from "./sections/skills";
 import { tw } from "./tailwind";
@@ -64,7 +63,6 @@ export const CV = () => (
         <View style={{ width: 260, ...tw("flex flex-col gap-4 p-4") }}>
           <AchievementsSection />
           <SkillsSection />
-          <HobbiesSection />
         </View>
       </View>
     </Page>
