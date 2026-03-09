@@ -78,7 +78,7 @@ const MainContent = () => {
               <Text>130+ issues</Text>
             </View>
           </View>
-          <Text style={{ fontFamily: "Helvetica-Bold" }}>Common contributor to open source projects</Text>
+          <Text style={{ fontFamily: "Helvetica-Bold" }}>Regular contributor to open source projects</Text>
           <Link src="https://github.com/nvim-telescope/telescope.nvim" style={tw("text-black-200")}>- Telescope.nvim</Link>
           <Link src="https://github.com/pypa/pipenv" style={tw("text-black-200")}>- pipenv</Link>
           <Link src="https://github.com/shadcn-ui/ui" style={tw("text-black-200")}>- shadcn-ui</Link>

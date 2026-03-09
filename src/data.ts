@@ -34,7 +34,7 @@ export const employments: EmploymentEntryProps[] = [
       "technologies: C#, SQL, Javascript, ActiveMQ",
       "implementing technical side of life insurance",
       "responsible for system integration with data-warehouse",
-      "performance optimalizations of data-warehouse system",
+      "performance optimizations of data-warehouse system",
       "interviewing job candidates"
     ],
     position: "Software Developer",
@@ -47,7 +47,7 @@ export const employments: EmploymentEntryProps[] = [
     description: [
       "technologies: C#, SQL, REST, SOAP",
       "implementing scalable insurance and banking solutions",
-      "performance optimalizations of database system",
+      "performance optimizations of database system",
       "providing mentorship for new joiners",
     ],
     position: "Analyst Developer",
@@ -69,7 +69,7 @@ export const hobbies: EnumerationEntry[] = [
     title: "Chess",
     description: [
 
-      "Competively played for couple years",
+      "Competitively played for a couple of years",
       "Highest online rating reached is around 2100 elo",
     ]
   },
@@ -118,7 +118,7 @@ export const projects: ProjectEntryProps[] = [
       "proof-of-concept management tool for minecraft bots",
       "allows for distributed hosting of bots",
       "implemented various path-finding algorithm",
-      "bot can be integrated with AI and used for traning"
+      "bot can be integrated with AI and used for training"
     ]
   },
   {
@@ -241,7 +241,7 @@ export const skills: SkillEntryProps[] = [
     rating: 3,
     description: [
       "intermediate knowledge of react ecosystem",
-      "comfortable and exited to code in react with TS",
+      "comfortable and excited to code in React with TS",
       "fan of T3-stack"
     ]
   }
