@@ -101,7 +101,7 @@ export const socialsLinks = [
     image: images.github_icon,
   },
   {
-    link: "thekobu@gmail.com",
+    link: "mailto:thekobu@gmail.com",
     label: "thekobu@gmail.com",
     image: images.gmail_icon,
   },
@@ -169,6 +169,7 @@ export const projects: ProjectEntryProps[] = [
     ],
     description: [
       "Hypixel SkyBlock analytics platform",
+      "more than 3GB of data ingested daily",
       "guild member comparison by networth and level progression",
       "Redis caching and data visualization with charts",
     ],
@@ -206,7 +207,7 @@ export const achievements: EnumerationEntry[] = [
     ],
   },
   {
-    title: "RedHat Annual Bug Hunting ",
+    title: "RedHat Annual Bug Hunting",
     description: ["Achieved 3rd place in a fierce competition"],
   },
   {
@@ -241,15 +242,15 @@ export const skills: SkillEntryProps[] = [
     name: "C#",
     icon: images.csharp_icon,
     rating: 4,
-    description: ["2 years professional use", ".NET, EF Core, LINQ"],
+    description: ["3 years professional use", ".NET, EF Core, LINQ"],
   },
   {
     name: "Python",
     icon: images.python_icon,
     rating: 4,
     description: [
-      "automation, scripting, and backend",
-      "used in production at Oracle",
+      "used to build tooling and automate workflows",
+      "scripting and backend services at Oracle",
     ],
   },
   {
@@ -284,7 +285,7 @@ export const skills: SkillEntryProps[] = [
     icon: images.react_icon,
     rating: 3,
     description: [
-      "used across all personal projects",
+      "used for frontend across all personal projects",
       "React + TypeScript + Next.js",
     ],
   },
@@ -293,15 +294,18 @@ export const skills: SkillEntryProps[] = [
     icon: images.rust_icon,
     rating: 3,
     description: [
-      "powers nowaster backend via Axum",
-      "memory safety without GC",
+      "used to develop a scalable backend",
+      "Axum framework, deployed in production",
     ],
   },
   {
     name: "Java",
     icon: images.java_icon,
     rating: 3,
-    description: ["used daily at Oracle", "multithreading, JVM internals"],
+    description: [
+      "primary language at Oracle",
+      "multithreading, JVM internals",
+    ],
   },
   {
     name: "Docker",
@@ -317,7 +321,7 @@ export const skills: SkillEntryProps[] = [
     icon: images.oracle_icon,
     rating: 3,
     description: [
-      "used daily at Oracle",
+      "core platform for Oracle infrastructure work",
       "scheduling, monitoring, cloud execution",
     ],
   },
