@@ -221,7 +221,7 @@ export const education: EducationEntryProps[] = [
     insititute: "Bc. Computer Science",
     address: "Faculty of Informatics, Masaryk University, Brno, Czech Republic",
     from: new Date(2021, 8),
-    to: new Date(2024, 11),
+    to: new Date(2025, 5),
   },
   {
     insititute: "General Medicine",
