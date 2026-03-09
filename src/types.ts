@@ -24,8 +24,10 @@ export type EnumerationEntry = {
 };
 
 export type ProjectEntryProps = {
-  repositry: string;
+  repositry: string | "private" | "none";
+  url?: string;
   name: string;
+  technologies: string[];
   description: string[];
 };
 

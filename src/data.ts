@@ -113,31 +113,83 @@ export const socialsLinks = [
 export const projects: ProjectEntryProps[] = [
   {
     repositry: "https://github.com/Kobu-Labs/nowaster-web",
+    url: "https://nowaster.app",
     name: "nowaster",
+    technologies: [
+      "AWS S3",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Rust",
+      "PostgreSQL",
+    ],
     description: [
-      "technologies: React, TS, Nextjs, Tailwind, Python",
-      "tool for students to track time spent studying",
-      "designed with minimal software overhead in mind",
-      "allows interacting via CLI or a web app",
+      "blazingly-fast time tracking app with tens of active monthly users",
+      "frontend built with Next.js, backend powered by Rust and Axum",
+      "OAuth2 authentication with JWT",
+      "sole developer — 40k+ lines of code across 1600+ commits",
+      "automated database backups",
+      "ephemeral sandbox environments",
     ],
   },
   {
-    repositry: "https://github.com/Kobu-Labs/plutus",
-    name: "plutus",
+    repositry: "private",
+    url: "https://pro-set.sk",
+    name: "proset",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Prisma",
+      "Stripe",
+      "Clerk",
+    ],
     description: [
-      "technologies: Nextjs, React, RabbitMQ, Prisma",
+      "full-stack web app for a popular tennis club",
+      "serving hundreds of active monthly users",
+      "court reservation system with real-time availability",
+      "admin dashboard for managing members and reservations",
+      "payment processing via Stripe",
+      "photo gallery with Cloudinary",
+    ],
+  },
+  {
+    repositry: "https://github.com/Kobu-Labs/kobuman-compares",
+    url: "https://compare.kobuman.dev",
+    name: "kobuman/compare",
+    technologies: [
+      "AWS S3",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "Redis",
+    ],
+    description: [
+      "Hypixel SkyBlock analytics platform",
+      "guild member comparison by networth and level progression",
+      "Redis caching and data visualization with charts",
+    ],
+  },
+  {
+    repositry: "https://github.com/Kobu/resume",
+    name: "this resume :)",
+    technologies: ["React", "TypeScript", "react-pdf"],
+    description: [
+      "you are looking at it right now",
+      "PDF generated entirely in React",
+    ],
+  },
+  {
+    repositry: "private",
+    name: "plutus",
+    technologies: ["Next.js", "React", "RabbitMQ", "Prisma"],
+    description: [
       "proof-of-concept management tool for minecraft bots",
       "allows for distributed hosting of bots",
-      "implemented various path-finding algorithm",
+      "implemented various path-finding algorithms",
       "bot can be integrated with AI and used for training",
-    ],
-  },
-  {
-    repositry: "https://github.com/Kobu/git-timewarp",
-    name: "git-timewarp",
-    description: [
-      "technologies: Python, Bash",
-      "utility tool for changing author dates of git commits",
     ],
   },
 ];
@@ -163,10 +215,10 @@ export const achievements: EnumerationEntry[] = [
 
 export const education: EducationEntryProps[] = [
   {
-    insititute: "Grammar School",
-    from: new Date(2014, 8),
-    to: new Date(2018, 6),
-    address: "Gymnazium 1. Maja, Malacky, Slovakia",
+    insititute: "Computer Science",
+    address: "Faculty of Informatics, Masaryk University, Brno, Czech Republic",
+    from: new Date(2021, 8),
+    to: new Date(2024, 11),
   },
   {
     insititute: "General Medicine",
@@ -175,10 +227,10 @@ export const education: EducationEntryProps[] = [
     to: new Date(2019, 7),
   },
   {
-    insititute: "Computer Science",
-    address: "Faculty of Informatics, Masaryk University, Brno, Czech Republic",
-    from: new Date(2021, 8),
-    to: new Date(2024, 11),
+    insititute: "Grammar School",
+    from: new Date(2014, 8),
+    to: new Date(2018, 6),
+    address: "Gymnazium 1. Maja, Malacky, Slovakia",
   },
 ];
 

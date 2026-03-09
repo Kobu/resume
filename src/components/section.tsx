@@ -4,7 +4,7 @@ import { tw } from "../tailwind";
 
 export const Section: FC<PropsWithChildren> = (props) => {
   return (
-    <View style={tw("border rounded-md p-5 flex flex-col gap-2")}>{props.children}</View>
+    <View style={tw("border-l-4 border-yellow-500 pl-4 py-2 flex flex-col gap-2")}>{props.children}</View>
   );
 };
 
