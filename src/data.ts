@@ -217,7 +217,7 @@ export const achievements: EnumerationEntry[] = [
 
 export const education: EducationEntryProps[] = [
   {
-    insititute: "Computer Science",
+    insititute: "Bc. Computer Science",
     address: "Faculty of Informatics, Masaryk University, Brno, Czech Republic",
     from: new Date(2021, 8),
     to: new Date(2024, 11),
