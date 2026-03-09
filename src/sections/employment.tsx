@@ -2,6 +2,7 @@ import { Text, View, Image } from "@react-pdf/renderer";
 import { FC } from "react";
 import { employments } from "../data";
 import { SectionTitle } from "../components/section";
+import { Tag } from "../components/tag";
 import { TimeInterval } from "../components/time-interval";
 import { tw } from "../tailwind";
 import { EmploymentEntryProps } from "../types";
@@ -25,11 +26,7 @@ const EmploymentEntry: FC<EmploymentEntryProps> = (props) => {
         <TimeInterval from={props.from} to={props.to} />
         <View style={tw("flex flex-row flex-wrap gap-1 my-1")}>
           {props.technologies.map((tech) => (
-            <Text
-              style={tw("bg-black text-white uppercase px-1 py-0.5 text-xs")}
-            >
-              {tech}
-            </Text>
+            <Tag label={tech} />
           ))}
         </View>
         <View style={tw("flex flex-col")}>
