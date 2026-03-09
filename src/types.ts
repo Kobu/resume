@@ -4,8 +4,9 @@ export type EmploymentEntryProps = {
     icon: typeof images[keyof typeof images]
     institute: string
     position: string
+    team: string
     from: Date
-    to: Date
+    to?: Date
     description: string[]
 }
 

@@ -8,16 +8,19 @@ import { EmploymentEntryProps } from "../types";
 
 const EmploymentEntry: FC<EmploymentEntryProps> = (props) => {
   return (
-    <View style={tw("flex flex-col")}>
-      <View style={tw("flex flex-row gap-1 items-center")}>
-        <Image src={props.icon} style={tw("h-6 w-6")} />
-        <Text style={{ fontFamily: "Helvetica-Bold", fontSize: 10 }}>{props.institute}</Text>
-      </View>
-      <TimeInterval from={props.from} to={props.to} />
+    <View style={tw("flex flex-row gap-4")}>
+      <Image src={props.icon} style={tw("h-16 w-16 rounded-md")} />
       <View style={tw("flex flex-col")}>
-        {props.description.map(entry => (
-          <Text style={tw("text-sm")}>- {entry}</Text>
-        ))}
+        <Text style={{ fontFamily: "Helvetica-Bold", fontSize: 10 }}>
+          {props.institute}
+          <Text style={{ fontFamily: "Helvetica", fontSize: 10 }}> | {props.position} | {props.team}</Text>
+        </Text>
+        <TimeInterval from={props.from} to={props.to} />
+        <View style={tw("flex flex-col")}>
+          {props.description.map(entry => (
+            <Text style={tw("text-sm")}>- {entry}</Text>
+          ))}
+        </View>
       </View>
     </View>
   );

@@ -1,4 +1,10 @@
-import { EducationEntryProps, EmploymentEntryProps, EnumerationEntry, ProjectEntryProps, SkillEntryProps } from "./types";
+import {
+  EducationEntryProps,
+  EmploymentEntryProps,
+  EnumerationEntry,
+  ProjectEntryProps,
+  SkillEntryProps,
+} from "./types";
 
 export const images = {
   github_icon: "images/github-icon.png",
@@ -17,6 +23,7 @@ export const images = {
   git_icon: "images/git-icon.png",
   react_icon: "images/react-icon.png",
 
+  oracle_icon: "images/oracle.png",
   fnz_icon: "images/fnz-icon.png",
   adacta_icon: "images/adacta-icon.jpg",
 
@@ -27,17 +34,32 @@ export const images = {
 
 export const employments: EmploymentEntryProps[] = [
   {
+    institute: "Oracle",
+    from: new Date(2024, 8),
+    position: "Senior Software Engineer",
+    team: "Infrastructure Team",
+    icon: images.oracle_icon,
+    description: [
+      "technologies: OCI, Kubernetes, Docker, Java, Python, SQL",
+      "orchestrating schema migrations across tens of thousands of production databases",
+      "handling non-trivial migration pipelines at scale",
+      "working with OCI-native services for scheduling, monitoring and execution",
+      "building resilient services that keep systems reliable at massive scale",
+    ],
+  },
+  {
     institute: "Adacta Fintech",
     from: new Date(2023, 8),
     to: new Date(2024, 8),
     description: [
       "technologies: C#, SQL, Javascript, ActiveMQ",
       "implementing technical side of life insurance",
-      "responsible for system integration with data-warehouse",
+      "responsible for ETL pipelines, reporting and data sync with data-warehouse",
       "performance optimizations of data-warehouse system",
-      "interviewing job candidates"
+      "interviewing job candidates",
     ],
-    position: "Software Developer",
+    position: "Junior Software Developer",
+    team: "Product Team",
     icon: images.adacta_icon,
   },
   {
@@ -46,35 +68,29 @@ export const employments: EmploymentEntryProps[] = [
     to: new Date(2023, 8),
     description: [
       "technologies: C#, SQL, REST, SOAP",
-      "implementing scalable insurance and banking solutions",
-      "performance optimizations of database system",
+      "implementing insurance and banking solutions using CQRS",
+      "diagnosing and fixing slow query and performance issues across the database system",
       "providing mentorship for new joiners",
     ],
-    position: "Analyst Developer",
+    position: "Intern Software Developer",
+    team: "Product Team",
     icon: images.fnz_icon,
   },
-
 ];
 
 export const hobbies: EnumerationEntry[] = [
   {
     title: "Brazilian Jiu Jitsu",
-    description: [
-
-      "Training since September 2023",
-      "Currently a white belt",
-    ]
+    description: ["Training since September 2023", "Currently a white belt"],
   },
   {
     title: "Chess",
     description: [
-
       "Competitively played for a couple of years",
       "Highest online rating reached is around 2100 elo",
-    ]
+    ],
   },
 ];
-
 
 export const socialsLinks = [
   {
@@ -92,11 +108,6 @@ export const socialsLinks = [
     label: "Jakub Jakubec",
     image: images.linkedin_icon,
   },
-  {
-    link: "https://discord.com/users/598822325898706954",
-    label: "kobu19",
-    image: images.discord_icon,
-  },
 ];
 
 export const projects: ProjectEntryProps[] = [
@@ -108,7 +119,7 @@ export const projects: ProjectEntryProps[] = [
       "tool for students to track time spent studying",
       "designed with minimal software overhead in mind",
       "allows interacting via CLI or a web app",
-    ]
+    ],
   },
   {
     repositry: "https://github.com/Kobu-Labs/plutus",
@@ -118,8 +129,8 @@ export const projects: ProjectEntryProps[] = [
       "proof-of-concept management tool for minecraft bots",
       "allows for distributed hosting of bots",
       "implemented various path-finding algorithm",
-      "bot can be integrated with AI and used for training"
-    ]
+      "bot can be integrated with AI and used for training",
+    ],
   },
   {
     repositry: "https://github.com/Kobu/git-timewarp",
@@ -127,10 +138,9 @@ export const projects: ProjectEntryProps[] = [
     description: [
       "technologies: Python, Bash",
       "utility tool for changing author dates of git commits",
-    ]
-  }
+    ],
+  },
 ];
-
 
 export const achievements: EnumerationEntry[] = [
   {
@@ -139,18 +149,16 @@ export const achievements: EnumerationEntry[] = [
       "Winner of year 2021",
       "Annual contest on Faculty of Informatics, MUNI",
       "Offered to work in research laboratories",
-    ]
+    ],
   },
   {
     title: "RedHat Annual Bug Hunting ",
-    description: [
-      "Achieved 3rd place in a fierce competition",
-    ]
+    description: ["Achieved 3rd place in a fierce competition"],
   },
   {
     title: "Mensa IQ Slovakia",
-    description: ["Scored among the top 0.1%"]
-  }
+    description: ["Scored among the top 0.1%"],
+  },
 ];
 
 export const education: EducationEntryProps[] = [
@@ -171,7 +179,7 @@ export const education: EducationEntryProps[] = [
     address: "Faculty of Informatics, Masaryk University, Brno, Czech Republic",
     from: new Date(2021, 8),
     to: new Date(2024, 11),
-  }
+  },
 ];
 
 export const skills: SkillEntryProps[] = [
@@ -182,7 +190,7 @@ export const skills: SkillEntryProps[] = [
     description: [
       "used on regular basis in a professional setting",
       "advance knowledge of the C# ecosystem",
-    ]
+    ],
   },
   {
     name: "Python",
@@ -191,9 +199,8 @@ export const skills: SkillEntryProps[] = [
     description: [
       "proficient knowledge",
       "used to automate and script numerous tasks",
-      "several times used in a medium sized project"
-
-    ]
+      "several times used in a medium sized project",
+    ],
   },
   {
     name: "Typescript",
@@ -202,8 +209,8 @@ export const skills: SkillEntryProps[] = [
     description: [
       "intermediate knowledge of the TS/JS ecosystem",
       "loving the type system",
-      "typescript enthusiast"
-    ]
+      "typescript enthusiast",
+    ],
   },
   {
     name: "SQL",
@@ -211,9 +218,8 @@ export const skills: SkillEntryProps[] = [
     rating: 3,
     description: [
       "used almost daily in a professional setting",
-      "comfortable using SQL even in bigger projects"
-
-    ]
+      "comfortable using SQL even in bigger projects",
+    ],
   },
   {
     name: "Git, GitHub and GitLab",
@@ -221,8 +227,8 @@ export const skills: SkillEntryProps[] = [
     rating: 4,
     description: [
       "advanced knowledge of git",
-      "comfortable doing even the non-trivial git tasks"
-    ]
+      "comfortable doing even the non-trivial git tasks",
+    ],
   },
   {
     name: "Haskell",
@@ -231,9 +237,8 @@ export const skills: SkillEntryProps[] = [
     description: [
       "one of my favorite languages",
       "basic knowledge of core principles",
-      "fan of functional programming"
-
-    ]
+      "fan of functional programming",
+    ],
   },
   {
     name: "React",
@@ -242,7 +247,7 @@ export const skills: SkillEntryProps[] = [
     description: [
       "intermediate knowledge of react ecosystem",
       "comfortable and excited to code in React with TS",
-      "fan of T3-stack"
-    ]
-  }
+      "fan of T3-stack",
+    ],
+  },
 ];
