@@ -55,13 +55,13 @@ export const CV = () => (
       {/* Two-column body */}
       <View style={tw("flex flex-row h-full")}>
         {/* Left column */}
-        <View style={tw("flex flex-col gap-4 m-4")}>
+        <View style={{ flex: 1, ...tw("flex flex-col gap-4 p-4") }}>
           <ProjectsSection />
           <EducationSection />
         </View>
 
         {/* Right column */}
-        <View style={tw("flex flex-col gap-4 m-4")}>
+        <View style={{ width: 260, ...tw("flex flex-col gap-4 p-4") }}>
           <AchievementsSection />
           <SkillsSection />
           <HobbiesSection />

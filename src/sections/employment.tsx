@@ -45,7 +45,9 @@ const EmploymentEntry: FC<EmploymentEntryProps> = (props) => {
 export const EmploymentSection = () => {
   return (
     <View
-      style={tw("border-l-4 border-yellow-500 pl-4 py-2 flex flex-col gap-4")}
+      style={tw(
+        "w-full border-l-4 border-yellow-500 pl-4 py-2 flex flex-col gap-4",
+      )}
     >
       <SectionTitle title="Employment" />
       <View style={tw("flex flex-col gap-4")}>

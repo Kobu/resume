@@ -120,7 +120,6 @@ export const projects: ProjectEntryProps[] = [
       "Next.js",
       "React",
       "TypeScript",
-      "Tailwind",
       "Rust",
       "PostgreSQL",
     ],

@@ -1,17 +1,25 @@
-import { View , Text} from "@react-pdf/renderer";
+import { View, Text } from "@react-pdf/renderer";
 import { FC, PropsWithChildren } from "react";
 import { tw } from "../tailwind";
 
 export const Section: FC<PropsWithChildren> = (props) => {
   return (
-    <View style={tw("border-l-4 border-yellow-500 pl-4 py-2 flex flex-col gap-2")}>{props.children}</View>
+    <View
+      style={tw(
+        "w-full bg-white border-l-4 border-yellow-500 pl-4 py-2 flex flex-col gap-2",
+      )}
+    >
+      {props.children}
+    </View>
   );
 };
 
 export const SectionTitle = (props: { title: string }) => {
   return (
     <View style={tw("flex flex-row")}>
-      <Text style={tw("text-white-400 bg-black uppercase p-1 px-2 text-sm")}>{props.title}</Text>
+      <Text style={tw("text-white-400 bg-black uppercase p-1 px-2 text-sm")}>
+        {props.title}
+      </Text>
     </View>
   );
 };
