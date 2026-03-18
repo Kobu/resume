@@ -242,7 +242,7 @@ export const skills: SkillEntryProps[] = [
     name: "C#",
     icon: images.csharp_icon,
     rating: 4,
-    description: ["3 years professional use", ".NET, EF Core, LINQ"],
+    description: ["2 years professional use", ".NET, EF Core, LINQ"],
   },
   {
     name: "Python",
