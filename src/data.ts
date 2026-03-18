@@ -157,8 +157,8 @@ export const projects: ProjectEntryProps[] = [
   },
   {
     repositry: "https://github.com/Kobu-Labs/kobuman-compares",
-    url: "https://compare.kobuman.dev",
-    name: "kobuman/compare",
+    url: "https://compares.kobuman.dev",
+    name: "kobuman/compares",
     technologies: [
       "AWS S3",
       "Next.js",
